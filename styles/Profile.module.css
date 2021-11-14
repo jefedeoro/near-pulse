@@ -1,0 +1,64 @@
+.title {
+    font-family: Poppins;
+    font-style: normal;
+    font-weight: 600;
+    font-size: 30px;
+    line-height: 21px;
+    color: #49577A;
+    display: inline-block;
+}
+
+.profile {
+    font-family: Poppins;
+}
+
+.profile h2 {
+    font-style: normal;
+    font-weight: 600;
+    font-size: 24px;
+    line-height: 21px;
+    color: #707B9B;
+}
+.profile h3 {
+    font-family: Poppins;
+    font-style: normal;
+    font-weight: 600;
+    font-size: 20px;
+    line-height: 21px;
+    color: #49577A;
+}
+
+.others p {
+    font-family: Manrope;
+    font-style: normal;
+    font-weight: 500;
+    font-size: 12px;
+    line-height: 155%;
+    letter-spacing: 0.01em;
+    color: #49577A;
+}
+
+.hiw-p {
+    font-family: Manrope;
+    font-style: normal;
+    font-weight: 500;
+    font-size: 14px;
+    line-height: 155%;
+    letter-spacing: 0.01em;
+    color: #49577A;
+    margin-bottom: 1rem;
+}
+
+.videoWrapper {
+    position: relative;
+    padding-bottom: 56.25%; /* 16:9 */
+    height: 0;
+    margin-bottom: 20px;
+  }
+  .videoWrapper iframe {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+  }

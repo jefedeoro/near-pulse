@@ -1,0 +1,13 @@
+[
+    {"slug":"dapps","title":"DApps","filter":true},
+    {"slug":"defi","title":"DeFi","filter":true},
+    {"slug":"nft","title":"NFT","filter":true},
+    {"slug":"gaming","title":"Gaming","filter":true},
+    {"slug":"art","title":"Art","filter":true},
+    {"slug":"dev-tooling","title":"Dev Tooling","filter":true},
+    {"slug":"oracles","title":"Oracles","filter":false},
+    {"slug":"staking","title":"Staking","filter":false},
+    {"slug":"dao","title":"DAO","filter":false},
+    {"slug":"infrastructure","title":"Infrastructure","filter":false},
+    {"slug":"ecosystem","title":"Ecosystem","filter":false}
+  ]

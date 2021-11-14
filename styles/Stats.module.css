@@ -1,0 +1,58 @@
+.stats {
+    padding: 2rem;
+    background-color: #fff;
+    border-radius: 9px;
+    box-shadow: 0px 0px 30px 0px #4200FF0D;
+    margin-top: 3rem;
+    font-family: Poppins;
+}
+
+.stats h2 {
+    color: #707B9B;
+}
+
+
+.stats li {
+    font-weight: 400;
+    font-size: 14px;
+    color: #C4C4C4;
+    padding: 0.25rem 0.75rem;
+    margin: 0 0.25rem;
+}
+
+.stats li.selected {
+    color: #6B6EF9;
+    background-color: #FAFBFD;
+    border: 1px solid #6B6EF9;
+    box-sizing: border-box;
+    border-radius: 5px;
+    font-weight: 600;
+}
+
+.stat {
+    padding-top: 1.5rem;
+    font-style: normal;
+    font-weight: 500;
+    font-size: 14px;
+    line-height: 120%;
+    color: #A2A5AF;
+}
+
+.stat div {
+    font-style: normal;
+    font-weight: normal;
+    font-size: 36px;
+    line-height: 120%;
+    color: #49577A;
+    margin-top: 8px;
+}
+
+.tag {
+    background-color: #ECF0F8;
+    border-radius: 6px;
+    color: #49577A;
+    padding: 5px 10px;
+    font-size: 12px;
+    line-height: 18px;
+    margin-left: 5px;
+}

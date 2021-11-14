@@ -1,0 +1,96 @@
+.leaderboard {
+    background-color: #ffffff;
+    font-family: Poppins;
+    box-shadow: 0px 0px 30px 0px #4200FF0D;
+
+}
+
+.leaderboard thead {
+    background-color: rgba(243, 246, 249, 0.4);        
+    font-size: 12px;
+    font-weight: 600;
+    color:#B5B5C3;
+}
+
+.leaderboard th, .leaderboard td {
+    padding: 12px;
+}
+
+.leaderboard th {
+    width: 12.8%;
+}
+
+.leaderboard th:first-child {
+    width: 36%;
+}
+
+.leaderboard td {
+    font-size: 14px;
+    color: #464E5F;
+    font-weight: 500;
+    text-align: center;
+}
+
+.leaderboard td:first-child {
+    text-align: left;
+}
+
+.pr-12px {
+    padding-right: 12px;
+}
+
+.icon {
+    font-size: 12px;
+    text-align: center;
+}
+
+.oneliner {
+    font-style: normal;
+    font-weight: 500;
+    font-size: 13px;
+    line-height: 19px;
+    color: #B5B5C3;    
+}
+
+.leaderboard li {
+    font-weight: 400;
+    font-size: 14px;
+    color: #C4C4C4;
+    padding: 0.25rem 0.75rem;
+    margin: 0 0.25rem;
+}
+
+.leaderboard li.selected {
+    color: #6B6EF9;
+    background-color: #FAFBFD;
+    border: 1px solid #6B6EF9;
+    box-sizing: border-box;
+    border-radius: 5px;
+    font-weight: 600;
+}
+
+.sortByAsc
+{
+    left: 3px;
+    display: inline-block;
+    width: 0;
+    height: 0;
+    border: solid 5px transparent;
+    margin: 4px 4px 0 3px;
+    background: transparent;
+    border-bottom: solid 7px #B5B5C38F;
+    border-top-width: 0;
+}
+
+.sortByDesc
+{
+    left: 3px;
+    display: inline-block;
+    width: 0;
+    height: 0;
+    border: solid 5px transparent;
+    margin: 4px 4px 0 3px;
+    background: transparent;
+    border-top: solid 7px #B5B5C38F;
+    border-bottom-width: 0;
+}

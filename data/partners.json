@@ -1,0 +1,301 @@
+[
+    {
+      "categories": [ "dapps", "nft" ],
+      "link": "https://paras.id/",
+      "logo": "/logo/paras.jpg",
+      "slug": "paras",
+      "title": "Paras",
+      "contract": ["contract.paras.near"],
+      "oneLiner": "Create, Trade and Collect Digital Art Cards (DACs)",
+      "social": {
+        "twitter": "https://twitter.com/ParasHQ",
+        "medium": "https://medium.com/paras-media",
+        "telegram": "https://t.me/parashq",
+        "discord":"https://discord.gg/vWR2XBNupg"
+      },
+      "des": "Paras, All-in-one social DAC marketplace for creators and collectors. For Collectors: Discover beautiful art cards and collect them on a blockchain-based technology that prevents forgery and provides provable ownership. For Artists: Create your digital art cards and sell them on the marketplace in just a few clicks. Start earning with your digital creation.",
+      "previews": ["/previews/paras-1.png","/previews/paras-2.png","/previews/paras-3.png"],
+      "howItWorks": [ 
+          {             
+            "content": [{"youtube": "keW4k5pF4MA"}],
+            "width": 730,
+            "height": 360
+          },
+          {            
+            "content": [
+              {"h2": "For Collectors"},
+              {"p": "Discover beautiful art cards and collect them on a blockchain-based technology that prevents forgery andprovides provable ownership."},
+              {"h2": "For Artists"},
+              {"p": "Create your digital art cards and sell them on the marketplace in just a few clicks. Start earning with your digital creation."}              
+            ]
+          }
+      ]
+    },
+    {
+      "categories": [ "dapps", "nft" ],
+      "link": "https://www.mintbase.io/",
+      "logo": "/logo/mintbase.jpg",
+      "slug": "mintbase",
+      "title": "Mintbase",
+      "contract": ["mintbase.near", "mintbase1.near"],
+      "social": {
+        "twitter": "https://twitter.com/mintbase",
+        "medium": "https://medium.com/mintbase",
+        "telegram": "https://t.me/mintbase",
+        "discord":"https://discord.gg/89cSHH7"
+      },
+      "oneLiner":"Mintbase is a ground breaking NFT protocol that allows you to mint, sell and development on your own contract",
+      "des":"Making non-fungible tokens useful. Create your own digital asset backed by you. Founded by Nate Geier. With AllTheThings, a company can easily create their own reward system and thus, speed up consumer spending as well as increase customer loyalty through programmable reward tokens (ERC-721) called Things."
+    },
+    {
+      "categories": [ "dapps", "oracles" ],
+      "link": "https://fluxprotocol.org",
+      "logo": "/logo/flux.jpg",
+      "slug": "flux-protocol",
+      "title": "Flux Protocol",
+      "social": {
+        "twitter": "https://twitter.com/fluxprotocol/",
+        "app": "https://fluxprotocol.eth.link/",
+        "telegram": "https://t.me/fluxprotocol",
+        "github":"https://github.com/fluxprotocol"
+      },
+      "oneLiner": "The easiest protocol for developers launching open financial markets",
+      "des":"Flux is a scalable open data protocol providing on-chain data for any asset, commodity, or event. Easily connect to Flux with the open source Javascript SDK to enable scalable, permission-less data."
+    },
+    {
+      "categories": [
+        "dapps", "oracles", "defi"
+      ],
+      "link": "https://pulsemarket.eth.link/",
+      "logo": "/logo/pulse.jpg",
+      "slug": "pulse",
+      "title": "Pulse",
+      "social": {
+        "twitter": "https://twitter.com/pulsemarkets",
+        "telegram": "https://t.me/pulsemarkets"
+      },
+      "oneLiner":"Fair launch open-source app for prediction markets",
+      "des": "Pulse is an open-source app for prediction markets, by the community, for the community. built on Flux Protocol."
+    },
+    {
+      "categories": ["dapps", "staking", "dao", "defi"],
+      "link": "https://narwallets.com",
+      "logo": "/logo/meta-pool.jpeg",
+      "slug": "meta-pool",
+      "title": "Meta Pool",
+      "contract": ["meta-pool.near"],
+      "social": {
+        "twitter": "https://twitter.com/meta_pool",
+        "discord": "https://discord.gg/NJ7A2r2U8g",
+        "github":"https://github.com/Narwallets/meta-pool"
+      },
+      "oneLiner": "Liquid staking solution, no waiting period to unstake your NEAR rewards",
+      "des":"When staking with Meta Pool, users receive stNEAR tokens representing their share of the total supply of Metapool’s staked NEAR. stNEAR tokens can be used like any other NEP-141 Token to earn yields and lending rewards. The stNEAR price is updated every epoch to reflect NEAR Protocol staking rewards. Our goal is to solve the problems associated with Proof-of-Stake networks: illiquidity, immovability and accessibility. We aim to increase the liquidity of staked NEAR tokens and while distributing them across multiple validators to improve censorship-resistance of the NEAR network."
+    },
+    {
+      "categories": [
+        "dapps",
+        "defi"
+      ],
+      "link": "https://ref.finance/",
+      "logo": "/logo/ref-finance.jpg",
+      "slug": "ref-finance",
+      "title": "Ref Finance",
+      "contract":  ["v2.ref-farming.near", "v2.ref-finance.near"],
+      "social": {
+        "app": "https://app.ref.finance/",
+        "twitter": "https://twitter.com/finance_ref",
+        "telegram": "https://t.me/ref_finance",
+        "discord": "https://discord.gg/KKjQwCRvbV"
+      },
+      "oneLiner":"Ref Finance is a multi-purpose Decentralized Finance (DeFi) platform built on NEAR Protocol.",
+      "des": "Ref Finance is a community-led, multi-purpose Decentralized Finance (DeFi) platform built on NEAR Protocol. Ref combines several core components: a decentralized exchange, lending, a synthetic asset issuer, and more -— into a single, synchronous DeFi stack. Ref will take full advantage of NEAR’s low fees ($0.005 per swap), one-to-two second finality, and WebAssembly-based runtime (hello, Rust smart contracts!) to rival even CEX costs and speeds and become a powerful addition to the increasingly multi-chain DeFi ecosystem. Using the recently launched Rainbow Bridge (NEAR <> ETH), traders can utilize the billions of dollars in ERC-20-compliant assets from Ethereum, and eventually, from any chain (BSC, Polygon/Matic, Cosmos/IBC, and others) on NEAR. Ref Finance’s first product is an automated market maker (AMM). It is similar to Uniswap, with a few changes: Multiple pools in a single contract. Traders can trade across pools atomically in a single transaction. Customizable LP fees per pool. LPs can charge higher fees for illiquid or highly volatile tokens. Referral fees for swaps, currently set at 1 bps. Developers can earn rewards for building UIs and other applications on top of Ref Finance. The Ref Finance community is planning to launch a DAO on NEAR (using Sputnik DAO) to facilitate future development, upgrades, and community building. The DAO’s treasury will receive 4 bps from each swap. The DAO will be governed by the $REF token, which will be distributed to LPs, developers, and users of the platform. The distribution details and mechanisms will be described in subsequent posts."
+    },
+    {
+      "categories": [
+        "dapps",
+        "defi"
+      ],
+      "link": "https://skyward.finance/",
+      "logo": "/logo/skyward-finance.jpg",
+      "slug": "skyward-finance",
+      "title": "Skyward Finance",
+      "contract": ["skyward.near"],
+      "social": {
+        "app": "https://app.skyward.finance/",
+        "whitepaper": "https://skyward.finance/whitepaper/",
+        "twitter": "https://twitter.com/skywardfinance",
+        "telegram": "https://t.me/skywardfinance",
+        "discord": "https://discord.gg/KKjQwCRvbV",
+        "medium":"https://medium.com/nearprotocol/everything-you-need-to-know-about-skyward-finance-before-the-first-token-sale-6e82fe305e1a",
+        "github":"https://github.com/skyward-finance/"
+      },
+      "oneLiner":"Enable fair token distribution and price discovery for projects built on NEAR Protocol",
+      "des":"Skyward Finance is a decentralized platform to enable fair token distribution and price discovery for projects built on NEAR Protocol. Skyward Finance’s goal is to provide mechanisms for initial price discovery and token distribution through a streaming time-based auctions that are accessible to the general public in a decentralized way, while being resistant to front-running, price manipulations, and sybil attacks. Skyward Finance will issue a token that allows the community to become the part of the platform and get the corresponding part of the revenue."
+    },
+    {
+      "categories": [
+        "dapps",
+        "defi",
+        "art"
+      ],
+      "link": "https://berryclub.io/",
+      "logo": "/logo/berry-club.jpg",
+      "slug": "berry-club",
+      "title": "Berry Club",
+      "contract": [
+        "berryclub.near", "berryclub.ek.near"
+      ],
+      "oneLiner":"Berry Club is the first yield farming app on NEAR Protocol",
+      "des":"Berry Club is the first yield farming app on NEAR Protocol"
+    },
+    {
+      "categories": [
+        "dapps",
+        "nft"
+      ],
+      "link": "https://berry.cards/",
+      "logo": "/logo/berry-cards.jpg",
+      "slug": "berry-cards",
+      "title": "Berry Cards",
+      "contract": ["cards.berryclub.ek.near"],
+      "social": {
+        "twitter": "https://twitter.com/NEARCrowd/photo",
+        "telegram": "https://t.me/NEARCrowd",
+        "github": "https://github.com/evgenykuzyakov/berry-hot"
+      },
+      "oneLiner":"Selecting berry hot boards from the berryclub",
+      "des":"Compare historic Berry Club boards to find the best card. At least 10% of all sales goes to a newly created account that Evgeny Kuzyakov call Art DAO."
+    },
+    {
+      "categories": ["dapps"],
+      "link": "https://nearcrowd.com/",
+      "logo": "/logo/near-crowd.jpg",
+      "slug": "near-crowd",
+      "title": "NEAR Crowd",
+      "contract": ["app.nearcrowd.near"],
+      "social": {
+        "twitter": "https://twitter.com/NEARCrowd/photo",
+        "telegram": "https://t.me/NEARCrowd",
+        "github": "https://github.com/NEARCrowd"
+      },
+      "oneLiner": "Earn NEAR by performing simple tasks",
+      "des":"NEAR Crowd is a service that allows people earn Ⓝ by completing small tasks. While tasks are provided and funded by a centralized entity, called the Requestor, NEAR Crowd significantly limits the power that the Requestor has, and moves the power to the community instead. In particular, while the Requestor provides the specification of what needs to be done in each task, it’s the community that decides whether each task is completed correctly according to this specification. This is achieved by creating a set of rules, checks and balances that are enforced by a smart contract deployed on NEAR."
+    },
+    {
+      "categories": [
+        "dapps",
+        "nft",
+        "gaming"
+      ],
+      "link": "https://corgis3d.com",
+      "logo": "/logo/corgis.jpg",
+      "slug": "corgis3d",
+      "title": "Corgis 3D",
+      "contract":["corgis3d.yifang.near"],
+      "social": {
+        "twitter": "https://twitter.com/corgis3d"
+      },
+      "oneLiner":"Corgis 3D is playful NFT for users to mint, trade and development in 3D world",
+      "des":"Corgis 3D is playful NFT for users to mint, trade and development in 3D world. Explore the corgis world to play mini games."
+    },
+    {
+      "categories": [
+        "dapps"
+      ],
+      "link": "https://www.fygtapp.com/",
+      "logo": "/logo/feiyu.png",
+      "slug": "feiyu",
+      "title": "Feiyu",
+      "contract": ["canvas-war.feiyu.near"],
+      "social": {
+        "weixin": "fygtapp",
+        "bilibili": "https://b23.tv/SfiGBc"
+      },
+      "oneLiner": "",
+      "des":""
+    },
+    {
+      "categories": [
+        "infrastructure",
+        "defi",
+        "dev-tooling"
+      ],
+      "link": "https://github.com/near/rainbow-bridge",
+      "logo": "/logo/rainbow-bridge.jpg",
+      "slug": "rainbow-bridge",
+      "title": "Rainbow Bridge",
+      "contract":["client.bridge.near", "factory.bridge.near"],
+      "social": {
+        "github": "https://github.com/near/rainbow-bridge"
+      },
+      "oneLiner": "Transfer tokens between Ethereum and NEAR!",
+      "des": "The ETH ↔ NEAR Rainbow Bridge is a trustless, permissionless, and generic protocol for connecting blockchains. The bridge protocol removes the need to trust anyone except the security of the connected chains. Anyone can deploy a new bridge, use an existing bridge, or join the maintenance of an existing bridge without getting approval from anyone else."
+    },
+    {
+      "categories": ["ecosystem","dao"],
+      "link": "https://sputnik.fund",
+      "logo": "/logo/sputnikdao.jpg",
+      "slug": "sputnik-dao",
+      "title": "SputnikDAO",
+      "contract":["yolo.sputnikdao.near"],
+      "social": {
+        "twitter": "https://twitter.com/SputnikDAO"
+      },
+      "oneLiner":"Launch pad for your next DAO",
+      "des":"SputnikDAO is a hub of DAOs empowering communities of the NEAR ecosystem. Receive rewards for individual contributions by submitting proposals to existing DAOs. Create a guild for your own meaningful project to find allies and monthly funding."
+    },
+    {
+      "categories": [
+        "dapps",
+        "art",
+        "nft"
+      ],
+      "link": "https://www.near-pixelparty.co/",
+      "logo": "/logo/near-pixelparty.jpg",
+      "slug": "pixel-party",
+      "title": "Pixelparty",
+      "contract": ["pixelparty.near"],
+      "oneLiner":"NFT on NEAR with a total supply of only 600 tokens",
+      "des": "Pixelparty is kind of a NFT on the Near Blockchain with a total supply of only 600 tokens. Each token represents a subframe of the Pixelparty-Frame. Each token you own authorizes you to draw the frame (20x20px) you own in the way you want and be a part of the big picture. You can just draw something you like or even could buy several connecting frame and use it to advertise for something."
+    },
+    {
+      "categories": ["dapps"],
+      "link": "https://near.bet/",
+      "logo": "/logo/near-bet.jpg",
+      "slug": "near-bet",
+      "title": "NEAR Bet",
+      "contract": ["c.nearbet.near"],
+      "oneLiner": "The easiest way to get a cool account name.",
+      "des":"NEAR.bet is NEAR Account Marketplace. It allows you to sell, bet and buy NEAR Account names. Founders, to allow you to find brilliant account names and place them onto the market for selling. Believers, to participate in finding fair price, taking rewards for your faithful evaluation and wisdom. Claimers, to obtain perfect account names for inner usage, personal collection or further resales."
+    },
+    {
+      "categories": [
+        "dapps",
+        "gaming"
+      ],
+      "link": "https://awesomenear.com/galaxy-online/",
+      "logo": "/logo/galaxy-online.jpg",
+      "slug": "galaxy-online",
+      "title": "Galaxy Online",
+      "contract": ["galaxybank.near"],
+      "social": {
+        "twitter": "https://t.me/GalaxyOnline_en"
+      },
+      "oneLiner": "Epic MMO with blockchain-based game races.",
+      "des":"Galaxy Online is an epic MMO with blockchain-based game races. Space online strategy game with huge universe consisting of a variety of galaxies where ruthless battles take place for dominance over planets and rich territories of space. Conquer planets, mine minerals, improve skills and technologies, build your fleet, trade, attack and defend, join corporations and clans. In addition to the pleasant process of the game, you have the opportunity to earn cryptocurrency without investments just by playing!"
+    },
+    {
+      "categories": [
+        "nft",
+        "dapps"
+      ],
+      "link": "https://nft.hiphop/",
+      "logo": "/logo/nft-hiphop.png",
+      "slug": "nft-hiphop",
+      "title": "NFT HipHop",
+      "contract": ["uhhmnft.near"],
+      "oneLiner": "Hip-Hop Heads NFT auction marketplace",
+      "des":"NEAR collaborated with Ed Young, co-founder of The Source magazine, and artist André LeRoy Davis to release a collection of non-fungible tokens featuring portraits of iconic figures from the 47-year history of hip-hop. The pop-up auction features new daily editions of all 103 Hip Hop Heads. Fans can bid with a credit card – no complex crypto onboarding – creating a NEAR account in the process, and the winners' NFTs will display in their NEAR wallet."
+    }
+  ]
