@@ -26,31 +26,31 @@ const PartnerList = ({partners, categories}) => {
 
     switch(period) {
         case '24h': 
-            transactions = useSWR('https://api.near-pulse.com/connect/result/5', fetcher)            
-            users = useSWR('https://api.near-pulse.com/connect/result/9', fetcher)        
-            tvt = useSWR('https://api.near-pulse.com/connect/result/13', fetcher)
+            transactions = useSWR('https://api.near-pulse.com/connect/result/5', fetcher, { refreshInterval: 5000 })      
+            users = useSWR('https://api.near-pulse.com/connect/result/9', fetcher, { refreshInterval: 5000 })
+            tvt = useSWR('https://api.near-pulse.com/connect/result/13', fetcher, { refreshInterval: 5000 })
             break;
         case '7d': 
-            transactions = useSWR('https://api.near-pulse.com/connect/result/3', fetcher)
-            users = useSWR('https://api.near-pulse.com/connect/result/8', fetcher)
-            tvt = useSWR('https://api.near-pulse.com/connect/result/12', fetcher)
+            transactions = useSWR('https://api.near-pulse.com/connect/result/3', fetcher, { refreshInterval: 5000 })
+            users = useSWR('https://api.near-pulse.com/connect/result/8', fetcher, { refreshInterval: 5000 })
+            tvt = useSWR('https://api.near-pulse.com/connect/result/12', fetcher, { refreshInterval: 5000 })
             break;
         case '30d': 
-            transactions = useSWR('https://api.near-pulse.com/connect/result/2', fetcher)
-            users = useSWR('https://api.near-pulse.com/connect/result/7', fetcher)
-            tvt = useSWR('https://api.near-pulse.com/connect/result/11', fetcher)
+            transactions = useSWR('https://api.near-pulse.com/connect/result/2', fetcher, { refreshInterval: 5000 })
+            users = useSWR('https://api.near-pulse.com/connect/result/7', fetcher, { refreshInterval: 5000 })
+            tvt = useSWR('https://api.near-pulse.com/connect/result/11', fetcher, { refreshInterval: 5000 })
             break;
         case 'all': 
-            transactions = useSWR('https://api.near-pulse.com/connect/result/1', fetcher)
-            users = useSWR('https://api.near-pulse.com/connect/result/6', fetcher)
-            tvt = useSWR('https://api.near-pulse.com/connect/result/10', fetcher)            
+            transactions = useSWR('https://api.near-pulse.com/connect/result/1', fetcher, { refreshInterval: 5000 })
+            users = useSWR('https://api.near-pulse.com/connect/result/6', fetcher, { refreshInterval: 5000 })
+            tvt = useSWR('https://api.near-pulse.com/connect/result/10', fetcher, { refreshInterval: 5000 })
             break;
     }
     const transactions_data = transactions.data ? JSON.parse(transactions.data.query_result) : null;    
     const users_data = users.data ? JSON.parse(users.data.query_result) : null;    
     const tvt_data = tvt.data ? JSON.parse(tvt.data.query_result) : null;
 
-    const fiat = useSWR('https://helper.mainnet.near.org/fiat', fetcher)      
+    const fiat = useSWR('https://helper.mainnet.near.org/fiat', fetcher, { refreshInterval: 5000 })
 
     const sortCallback = (column) => {
         if (column != sortBy) setSortBy(column);
@@ -294,13 +294,13 @@ const PartnerList = ({partners, categories}) => {
                                         </td>
                                         <td>                                             
                                             {
-                                                partnerAcctData.length 
+                                                /*partnerAcctData.length 
                                                 ?
                                                 partnerAcctData
                                                     .filter((acct) => partner.contract && partner.contract.includes(acct.account) )
                                                     .map(acct => +(acct.locked))
                                                     .reduce((total, currentValue) => +(total ?? 0) + +(currentValue ?? 0), 0)  / (1000000000000000000000000)                                                       
-                                                : <Skeleton /> 
+                                                : */ <Skeleton enableAnimation={false} baseColor="rgba(243, 246, 249, 0.4)" /> 
 
                                                 /*
                                                 TVL = Total Value Locked
@@ -310,14 +310,14 @@ const PartnerList = ({partners, categories}) => {
                                         </td>
                                         <td> 
                                             {
-                                                partnerAcctData.length 
+                                                /*partnerAcctData.length 
                                                     ?
                                                     Math.round(partnerAcctData
                                                         .filter((acct) => partner.contract && partner.contract.includes(acct.account) )
                                                         .map(acct => +(acct.amount) + +(acct.locked))
                                                         .reduce((total, currentValue) => +(total ?? 0) + +(currentValue ?? 0), 0)  / (1000000000000000000000000) * (!fiat.error && fiat.data && false ? fiat.data.near.usd : 1))
                                                         .toLocaleString('en-US') + ((!fiat.error && fiat.data && false ? ' USD' : ' NEAR')) 
-                                                    : <Skeleton /> 
+                                                    :*/ <Skeleton enableAnimation={false} baseColor="rgba(243, 246, 249, 0.4)" /> 
                                                 
                                                 /*                                                
                                                 CAP is TVT * that fiat value
