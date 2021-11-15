@@ -17,24 +17,24 @@ export default function Stats({ partner, categories, assets, partners }) {
     let transactions, users, tvt
     switch(period) {
         case '24h': 
-            transactions = useSWR('https://api.near-pulse.com/connect/result/5', fetcher)            
-            users = useSWR('https://api.near-pulse.com/connect/result/9', fetcher)    
-            tvt = useSWR('https://api.near-pulse.com/connect/result/13', fetcher)        
+            transactions = useSWR('https://api.near-pulse.com/connect/result/5', fetcher, { refreshInterval: 5000 })
+            users = useSWR('https://api.near-pulse.com/connect/result/9', fetcher, { refreshInterval: 5000 })
+            tvt = useSWR('https://api.near-pulse.com/connect/result/13', fetcher, { refreshInterval: 5000 })
             break;
         case '7d': 
-            transactions = useSWR('https://api.near-pulse.com/connect/result/3', fetcher)
-            users = useSWR('https://api.near-pulse.com/connect/result/8', fetcher)
-            tvt = useSWR('https://api.near-pulse.com/connect/result/12', fetcher)
+            transactions = useSWR('https://api.near-pulse.com/connect/result/3', fetcher, { refreshInterval: 5000 })
+            users = useSWR('https://api.near-pulse.com/connect/result/8', fetcher, { refreshInterval: 5000 })
+            tvt = useSWR('https://api.near-pulse.com/connect/result/12', fetcher, { refreshInterval: 5000 })
             break;
         case '30d': 
-            transactions = useSWR('https://api.near-pulse.com/connect/result/2', fetcher)
-            users = useSWR('https://api.near-pulse.com/connect/result/7', fetcher)
-            tvt = useSWR('https://api.near-pulse.com/connect/result/11', fetcher)
+            transactions = useSWR('https://api.near-pulse.com/connect/result/2', fetcher, { refreshInterval: 5000 })
+            users = useSWR('https://api.near-pulse.com/connect/result/7', fetcher, { refreshInterval: 5000 })
+            tvt = useSWR('https://api.near-pulse.com/connect/result/11', fetcher, { refreshInterval: 5000 })
             break;
         case 'all': 
-            transactions = useSWR('https://api.near-pulse.com/connect/result/1', fetcher)
-            users = useSWR('https://api.near-pulse.com/connect/result/6', fetcher)
-            tvt = useSWR('https://api.near-pulse.com/connect/result/10', fetcher)
+            transactions = useSWR('https://api.near-pulse.com/connect/result/1', fetcher, { refreshInterval: 5000 })
+            users = useSWR('https://api.near-pulse.com/connect/result/6', fetcher, { refreshInterval: 5000 })
+            tvt = useSWR('https://api.near-pulse.com/connect/result/10', fetcher, { refreshInterval: 5000 })
             break;
     }
     const transactions_data = transactions.data ? JSON.parse(transactions.data.query_result) : null;    
@@ -140,13 +140,13 @@ export default function Stats({ partner, categories, assets, partners }) {
                     Assets
                     <div>
                         {
-                            partnerAcctData.length  
+                            /*partnerAcctData.length  
                                 ? Math.round(partnerAcctData
                                     .filter((acct) => !partner || (partner && partner.contract && partner.contract.includes(acct.account)) )
                                     .map(acct => +(acct.amount) + +(acct.locked))
                                     .reduce((total, currentValue) => +(total ?? 0) + +(currentValue ?? 0), 0)  / (1000000000000000000000000) )
                                     .toLocaleString('en-US') + ' NEAR' 
-                                : <Skeleton />
+                                :*/ <Skeleton enableAnimation={false} baseColor="rgba(243, 246, 249, 0.4)" />
                         }
                     </div>
                 </div>

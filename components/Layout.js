@@ -11,8 +11,6 @@ import categories from "../data/categories.json"
 
 import { SearchContext } from "../context/search-context";
 
-const fetcher = (url) => fetch(url).then((res) => res.json());
-
 const Layout = ({ children }) => {
     
     const searchContext = useContext(SearchContext);
@@ -20,12 +18,6 @@ const Layout = ({ children }) => {
     const searchQueryHandler = (val) => {
       searchContext.searchHandler(val);
     };
-
-    /*
-    const transactions = useSWR('https://api.near-pulse.com/connect/result/3', fetcher)    
-    if (transactions.data && !transactions.error) {
-    }
-    */
 
     return (
         <>
@@ -50,8 +42,8 @@ const Layout = ({ children }) => {
                             </a>
                         </Link>
                         <div className="flex sm:flex-grow mx-2 sm:mx-8 pr-4 pl-4 search items-center relative">
-                            <i className="search-icon"></i>
-                            <input type="text" className="ml-4 sm:flex-grow w-1/2 sm:w-auto" onChange={(e) => { searchQueryHandler(e.target.value); }} />
+                            <i className="search-icon" onClick={() => document.getElementById('search-input').focus()}></i>
+                            <input id="search-input" type="text" className="ml-4 sm:flex-grow w-1/2 sm:w-auto placeholder-gray-200" onChange={(e) => { searchQueryHandler(e.target.value); }} placeholder="search..." />
                             <ul className={`absolute p-6 pt-2 ${styles['search-results']} ${ searchContext.query == '' ? 'hidden' : ''}`}>
                                 {
 
